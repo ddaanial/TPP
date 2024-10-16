@@ -1,0 +1,139 @@
+
+  .fragment.blur {
+    filter: blur(5px);
+  }
+  .fragment.blur.visible {
+    filter: none;
+  }
+  
+/* Apply to all text within .reveal sections */
+.reveal {
+    font-family: 'Nerko One', cursive;
+  }
+  
+.reveal h1{
+    font-family: 'Nerko One', cursive;
+  }
+.reveal h2 {
+    font-family: 'Nerko One', cursive;
+  }
+  
+  .reveal h3 {
+    font-family: 'Nerko One', cursive;
+  }
+  
+  .reveal h4 {
+    font-family: 'Nerko One', cursive;
+  }
+
+    
+  .reveal h5 {
+    font-family: 'Nerko One', cursive;
+  }
+  
+/* Style for the dataset description paragraph */
+.dataset-description {
+    color: #d6ff33; /* Change to your desired color */
+}
+
+/* Style for the training description paragraph */
+.training-description {
+    color: #0e729d; /* Change to your desired color */
+}
+
+/* Style for the metric description paragraph */
+.metric-description {
+    color: #d50ef4; /* Change to your desired color */
+}
+
+
+.make-it-pop-blue {
+    filter: drop-shadow(0 0 20px rgb(2, 226, 247)); /* Larger shadow */
+  }
+  .make-it-pop-red{
+    filter: drop-shadow(0 0 20px rgb(247, 2, 51)); /* Larger shadow */
+  }
+  .make-it-pop-yellow {
+    filter: drop-shadow(0 0 20px rgb(231, 247, 2)); /* Larger shadow */
+  }
+
+/* Style for the image container */
+.image-container {
+    text-align: center;
+    width: 600px; /* Increase the width of the rounded box */
+    height: 400px; /* Increase the height of the rounded box */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure the image stays within the box */
+    display: flex; /* Center the image */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddfd3b; /* Optional border for better visibility */
+    margin: auto; /* Center the container horizontally */
+    background-color: #faf0a2;
+}
+
+/* Style for images within the container */
+.image-container img {
+    width: 100%; /* Make the image fit the container width */
+    height: auto; /* Make the image fit the container height */
+    object-fit: cover; /* Ensure the image covers the container */
+    display: block; /* Remove extra space below the image */
+}
+
+
+/* Style for the glow effect on h1 within Reveal.js */
+.reveal section[data-state="make-it-pop-blue"] h1 {
+    color: #ffffff; /* Text color */
+    text-shadow: 0 0 20px rgba(42, 229, 246, 0.8); /* Glow effect */
+    /* Optional for additional glow effects */
+    transition: text-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Ensure the section has proper styling */
+.reveal section[data-state="make-it-pop-blue"] {
+    /* Ensure the section doesn't interfere with the glow effect */
+    background: none; /* Remove background if it affects visibility */
+}
+
+/* Style for the glow effect on h2 within Reveal.js */
+.reveal section[data-state="make-it-pop-red"] h2 {
+    color: #ffffff; /* Text color */
+    text-shadow: 0 0 20px rgba(247, 0, 86, 0.8); /* Glow effect */
+    /* Optional for additional glow effects */
+    transition: text-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Ensure the section has proper styling */
+.reveal section[data-state="make-it-pop-red"] {
+    /* Ensure the section doesn't interfere with the glow effect */
+    background: none; /* Remove background if it affects visibility */
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Adjust this to slightly larger than the image width */
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #ccc; /* Optional: Add a border around each container */
+    padding: 10px;
+    background-color: #333; /* Optional: background for the container */
+    border-radius: 8px; /* Optional: rounded corners */
+    text-align: center;
+}
+
+.image-box img {
+    width: 40000px;
+    height: auto;
+    display: block;
+}
+
+.image-box figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
