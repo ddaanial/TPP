@@ -46,6 +46,20 @@
     color: #d50ef4; /* Change to your desired color */
 }
 
+.tf {
+  color: #ff5f33; /* Change to your desired color */
+}
+
+/* Style for the training description paragraph */
+.at {
+  color: #6cd642; /* Change to your desired color */
+}
+
+/* Style for the metric description paragraph */
+.pt {
+  color: #0c5c9a; /* Change to your desired color */
+}
+
 
 .make-it-pop-blue {
     filter: drop-shadow(0 0 20px rgb(2, 226, 247)); /* Larger shadow */
@@ -81,18 +95,16 @@
 }
 
 
-/* Style for the glow effect on h1 within Reveal.js */
+/* Glow effect specifically for h1 in sections with make-it-pop-blue */
 .reveal section[data-state="make-it-pop-blue"] h1 {
-    color: #ffffff; /* Text color */
-    text-shadow: 0 0 20px rgba(42, 229, 246, 0.8); /* Glow effect */
-    /* Optional for additional glow effects */
-    transition: text-shadow 0.3s ease-in-out; /* Smooth transition */
+  color: #ffffff; /* Text color */
+  text-shadow: 0 0 20px rgba(42, 229, 246, 0.8); /* Glow effect */
+  transition: text-shadow 0.3s ease-in-out; /* Smooth transition */
 }
 
-/* Ensure the section has proper styling */
+/* Keep the existing section style to ensure proper styling */
 .reveal section[data-state="make-it-pop-blue"] {
-    /* Ensure the section doesn't interfere with the glow effect */
-    background: none; /* Remove background if it affects visibility */
+  background: none; /* Ensure the section doesn't interfere with the glow effect */
 }
 
 /* Style for the glow effect on h2 within Reveal.js */
