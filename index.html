@@ -1,127 +1,152 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>TPP</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-    
+  <title>TPP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css">
 
-  
-	</head>
-  
-	<body>
-		<div class="reveal">
-			<div class="slides">
-        <section data-state="make-it-pop-blue">
-          <h1>Medical AI</h1>
-        </section>
-				<section>
-          <p class="fragment custom blur">Thesis</p>
-          <p class="fragment custom blur">Paper</p>
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-state="make-it-pop-blue">
+        <h1>Presentation</h1>
+      </section>
+      <section>
+        <p class="fragment custom blur">Thesis</p>
+        <p class="fragment custom blur">Paper</p>
+        <p class="fragment custom blur">In Process</p>
+      </section>
+      <section>
+        <section>
+          <h1>Thesis</h1>
         </section>
         <section>
-          <section>
-            <h2>Thesis</h2>
-          </section>
-          <section>
-            <h2>Problem</h2>
-          </section>
-          <section>
-            <h2>Predicting Binding Affinities</h2>
-            <h3>Between Natural Components and K-Ras</h3>
-          </section>
-          <section>
-            <div class="image-container">
-                <img src="kras.png" alt="K-Ras Image">
-            </div>
-          </section>
-          <section>
-            <h3>Pancreatic Cancer</h3>
-            <h4>Pancreatic ductal adenocarcinoma (PDAC)</h4>
-          </section>
-          <section>
-            <div class="image-container">
-              <img src="smile.png" alt="SMILE Image">
-            </div>
-          </section>
-          <section>
-            <p class="fragment custom blur tf">Transformer Encoder</p>
-            <p class="fragment custom blur at">12 attention heads and 6 layers, resulting in 72 distinct attention mechanisms</p>
-            <p class="fragment custom blur pt">Pretrained on a subset of PubChem and ZINC + MLM</p>
-          </section>
-          <section>Our Contribution</section>
-          <section>
-            <p class="fragment custom blur dataset-description">Dataset of natural compound SMILES and their affinities for K-Ras G12C</p>
-            <p class="fragment custom blur training-description">Pretrained model + Fine Tuning competing SOTA </p>
-            <p class="fragment custom blur metric-description">Introducing a new ranking-based metric for evaluating models that is more intuitively related to this problem than MSE</p>
-          </section>
-          <section data-state="make-it-pop-red">
-            <h2>Achieving SOTA with MSE while outperforming SOTA on the new ranking-based metric</h2>
-          </section>
-          <section>
-            <div class="image-container" style="background-color: #ffffff; border: 3px solid #899a07;">
-              <img src="result.png" alt="Result Image">
-            </div>
-          </section>
+          <h2>Problem</h2>
         </section>
         <section>
-          <section>
-            <h2>Paper</h2>
-          </section>
-          <section>
-            <h3>Investigating Feature Extraction Designs for Human Activity Recognition</h3>
-            <h5 style="color: #1d8ff3;">Monitoring patients post-surgery</h5>
-          </section>
-          <section>
-            <h2 style= "color: #a43904;"> Data</h2>
-            <h5>Time series data: Gyroscope & Accelerometer</h5>
-            <h5 style="color: #0ef43c;">Task: Predicting Activity such as standing, sitting, ...</h5>
-          </section>
-          <section>
-            <h2><p class="fragment">Contributions</p></h2>
-            <p class="fragment custom blur dataset-description" style="color: #0ee5f4;">Examining different feature extractors</p>
-            <p class="fragment custom blur training-description" style="color: #f45b0e;">From traditional machine learning methods to shared weights in architectures like RNNs and transformers</p>
-            <p class="fragment custom blur metric-description" style="color: #5a5f12;">Different loss funcitons such as CE, triplet and contrastive</p>
-          </section>
-          <section>
-            <div class="image-container" style="background-color: #ffffff; border: 3px solid #899a07;">
-              <img src="paper-res.png" alt="Result Image">
-            </div>
-          </section>
-                                   
+          <h2>Predicting Binding Affinities</h2>
+          <h3>Between Natural Components and K-Ras</h3>
         </section>
-        <section data-state="make-it-pop-yellow">
-          <h1>THANK YOU</h1>
-        </section> 
-			</div>
-		</div>
-    
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: false,
-        controls: false, 
-        slideNumber: 'c/t',  // 'c' for current slide, 't' for total slides
-        progress: false,
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <section>
+          <div class="image-container">
+            <img src="kras.png" alt="K-Ras Image">
+          </div>
+        </section>
+        <section>
+          <h3>Pancreatic Cancer</h3>
+          <h4>Pancreatic ductal adenocarcinoma (PDAC)</h4>
+        </section>
+        <section>
+          <div class="image-container">
+            <img src="smile.png" alt="SMILE Image">
+          </div>
+        </section>
+        <section>
+          <p class="fragment custom blur tf">Transformer Encoder</p>
+          <p class="fragment custom blur at">12 attention heads and 6 layers, resulting in 72 distinct attention
+            mechanisms</p>
+          <p class="fragment custom blur pt">Pretrained on a subset of PubChem and ZINC + MLM</p>
+        </section>
+        <section>Our Contribution</section>
+        <section>
+          <p class="fragment custom blur dataset-description">Dataset of natural compound SMILES and their affinities
+            for K-Ras G12C</p>
+          <p class="fragment custom blur training-description">Pretrained model + Fine Tuning competing SOTA </p>
+          <p class="fragment custom blur metric-description">Introducing a new ranking-based metric for evaluating
+            models that is more intuitively related to this problem than MSE</p>
+        </section>
+        <section data-state="make-it-pop-red">
+          <h2>Achieving SOTA with MSE while outperforming SOTA on the new ranking-based metric</h2>
+        </section>
+        <section>
+          <div class="image-container" style="background-color: #ffffff; border: 3px solid #899a07;">
+            <img src="result.png" alt="Result Image">
+          </div>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Paper</h1>
+        </section>
+        <section>
+          <h3>Investigating Feature Extraction Designs for Human Activity Recognition</h3>
+          <h5 style="color: #1d8ff3;">Monitoring patients post-surgery</h5>
+        </section>
+        <section>
+          <h2 style="color: #a43904;"> Data</h2>
+          <h5>Time series data: Gyroscope & Accelerometer</h5>
+          <h5 style="color: #0ef43c;">Task: Predicting Activity such as standing, sitting, ...</h5>
+        </section>
+        <section>
+          <h2>
+            <p class="fragment">Contributions</p>
+          </h2>
+          <p class="fragment custom blur dataset-description" style="color: #0ee5f4;">Examining different feature
+            extractors</p>
+          <p class="fragment custom blur training-description" style="color: #f45b0e;">From traditional machine learning
+            methods to shared weights in architectures like RNNs and transformers</p>
+          <p class="fragment custom blur metric-description" style="color: #5a5f12;">Different loss funcitons such as
+            CE, triplet and contrastive</p>
+        </section>
+        <section>
+          <div class="image-container" style="background-color: #ffffff; border: 3px solid #899a07;">
+            <img src="paper-res.png" alt="Result Image">
+          </div>
+        </section>
+
+      </section>
+      <section>
+        <section>
+          <h1>In Process</h1>
+        </section>
+        <section>
+          <h2>Paper</h2>
+          <h3 style="color: #a43904;"> breast cancer subtyping & survival analysis (Final results stage)</h2>
+            <h5 style="color: #0ef43c;">multimodal learning (images & gene expression)</h5>
+        </section>
+        <section>
+          <h2>industry</h2>
+          <h3 style="color: #2c6637;">developing a real time video processing application(inpainting)</h3>
+        </section>
+      </section>
+      <section data-state="make-it-pop-yellow">
+        <h1>THANK YOU</h1>
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: false,
+      controls: false,
+      slideNumber: 'c/t',  // 'c' for current slide, 't' for total slides
+      progress: false,
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+  </script>
+</body>
+
 </html>
